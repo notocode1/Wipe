@@ -14,7 +14,7 @@ from telethon.errors import (
 
 import auth_core as auth_core
 from config import owner_id
-from auth_db import set_state, get_state, clear_state
+from auth import set_state, get_state, clear_state
 from auth_utils import validate_phone
 
 # -----------------------------------------------------------------------------
