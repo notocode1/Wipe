@@ -2,7 +2,7 @@
 
 import json
 from config import logger
-from db.core import db
+from db_core import db
 from asyncpg.exceptions import PostgresError
 
 async def set_state(user_id: int, step: str, data: dict = None):
