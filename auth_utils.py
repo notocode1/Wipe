@@ -4,7 +4,7 @@ from datetime import datetime
 from pytz import UTC
 
 from config import logger
-from db.auth import set_state, get_state
+from auth_db import set_state, get_state
 
 # ───────────────────────── helpers ─────────────────────────
 PHONE_RE = re.compile(r"^\+\d{10,15}$")
