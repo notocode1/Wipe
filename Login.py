@@ -12,10 +12,10 @@ from telethon.errors import (
     PhoneCodeInvalidError,
 )
 
-import auth.core as auth_core
+import auth_core as auth_core
 from config import owner_id
-from db.auth import set_state, get_state, clear_state
-from utils.auth_utils import validate_phone
+from auth_db import set_state, get_state, clear_state
+from auth_utils import validate_phone
 
 # -----------------------------------------------------------------------------
 router = Router()
